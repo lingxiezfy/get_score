@@ -37,9 +37,13 @@ while 1:
         # print(rsp.text)
         break
     else:
-        print(param, '尝试失败')
+        print(param, '查询中')
         zkzh += 1
         temp = zkzh - 31
         if temp % 100 == 0:
             zkzh = zkzh + 70
         param['zkzh'] = zkzh
+
+print("准考证号位",param['zkzh'])	
+	
+input("Please Enter:")		
